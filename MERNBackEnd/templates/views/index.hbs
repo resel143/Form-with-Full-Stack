@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@300&display=swap" rel="stylesheet">
+<!-- form ka ye hai -->
+    
+    <title>Registration</title>
+</head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+}
+/* form ka yaha se shuru kariyega */
+
+.form-block{
+    background-color: #845EC2;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 900px;
+    display: flex;
+}
+.first-block{
+    background-color: #845EC2;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.second-block{
+    background-color:#FFC75F;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height:90%;
+    border-radius: 150px 0px 0px 150px;
+}
+.first-first{
+    flex:4;
+    color: #FFC75F;
+}
+.first-second{
+    flex: 1;
+    margin: auto;
+}
+.second-first{
+    flex: 1;
+    display: flex;
+}
+.s-f-f{
+    flex: 4;
+}
+.s-f-s{
+    flex:1;
+    display: flex;
+    justify-content: space-evenly;
+}
+.s-f-s-f{
+    border-radius: 5px;
+    text-decoration: underline;
+    color: blue;
+}
+.s-f-s-s{
+    border-radius: 5px;
+    text-decoration: underline;
+    color: blue;
+}
+.s-f-s-f:hover, .s-f-s-s:hover{
+    color: orange;
+    cursor: pointer;
+}
+.second-second{
+    flex:1;
+    text-align: center;
+}
+.second-third{
+    flex:6;
+    display: flex;
+    justify-content: space-evenly;
+}
+.s-t-f{
+    /* flex: 1; */
+    background-color: whitesmoke;
+    height: 180px;
+}
+.s-t-s{
+    /* flex:1; */
+    background-color: whitesmoke;
+    height: 180px;
+}
+.first-first-maindiv{
+    
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+.logo{
+    flex:3;
+    margin: auto auto;
+    margin-top: 30px;
+}
+.head{
+    flex: 2;
+    text-align: center;
+}
+.description{
+    flex:1;
+    text-align: center;
+    font-family: 'BioRhyme', serif;
+}
+button {
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  color: rgb(248, 72, 72);
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+button:hover{
+    background-color: rgb(248, 72, 72);
+    color: white;
+}
+input[type=text], input[type=email], input[type=number], input[type=password]{
+    width: 250px;
+    height: 20px;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    font-family: 'Bubblegum Sans', cursive;
+}
+input[type=radio]{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 20px;
+}
+input[type=submit]{
+    background-color: rgb(250, 6, 6);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top:25px;
+  margin-left: 190px;
+  cursor: pointer;
+}
+h2{
+    font-family: 'Orbitron', sans-serif;
+}
+form{
+    font-family: 'Bubblegum Sans', cursive;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+</style>
+<body>
+    {{>navbar}}
+    <div class="form-block">
+        <div class="first-block">
+            <div class="first-first">
+                <div class="first-first-maindiv">
+                    <div class="logo">
+                        <img src="https://64.media.tumblr.com/2676f0bacc1796a108bbb5df5b014fbb/a7caa63002adf6af-97/s400x600/42fa54ea1669f943b32590a14b93d65dc3a30ef3.png" alt="finger">
+                    </div>
+                    <div class="head"><h2>Welcome</h2></div>
+                    <div class="description">Lorem ipsum dolor sit amet.</div>
+                </div>
+            </div>
+            <div class="first-second">
+                <button>Know More</button>
+            </div>
+        </div>
+        <div class="second-block">
+            <div class="second-first">
+                <div class="s-f-f"></div>
+                <div class="s-f-s">
+                    <div class="s-f-s-f">Register</div>
+                    <div class="s-f-s-s">Login</div>
+                </div>
+            </div>
+            <div class="second-second">
+                <h2>Opportunities Form</h2>
+            </div>
+            <div class="second-third">
+                
+                    <div class="s-t-f">
+                        <form action="/register" method="POST">
+                        <input type="text" placeholder="First Name" name="firstName"> <br>
+                        <input type="email" placeholder="email" name="email"> <br>
+                        <input type="number" placeholder="mobile" name="mobile"> <br>
+                        <input type="password" placeholder="password" name="password">
+                    
+                </div>
+                <div class="s-t-s">
+                    <input type="text" placeholder="Last Name" name="lastname"> <br>
+                    <input type="radio" id="Male" name="sex" value="Male"> Male
+                    <input type="radio" id="Female" name= "sex" value="Female">Female <br>
+                    <input type="number" placeholder="Age" name="age"> <br>
+                    <input type="password" placeholder="Confirm Password" name="confirmPassword"> <br>
+                    <input type="submit" value="Register">
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
